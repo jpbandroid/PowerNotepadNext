@@ -9,10 +9,57 @@
         Title="Sheets" Height="450" Width="800"
              ui:ThemeManager.IsThemeAware="True"
      ui:TitleBar.ExtendViewIntoTitleBar="True"    
-     ui:WindowHelper.SystemBackdropType="Mica"
+     ui:WindowHelper.SystemBackdropType="Tabbed"
      ui:TitleBar.IsBackButtonVisible="False"
      ui:WindowHelper.UseModernWindowStyle="True">
     <Grid>
+        <StackPanel x:Name="TitleBar" Orientation="Horizontal" Height="48" VerticalAlignment="Top">
+            <Border
+            x:Name="AppTitleBar"
+            Height="40"
+            Margin="12,2,0,0"
+            VerticalAlignment="Top"
+            Background="Transparent"
+            Canvas.ZIndex="1"
+            IsHitTestVisible="True">
+                <StackPanel Orientation="Horizontal" Width="Auto">
+                    <Image
+                    x:Name="AppFontIcon"
+                    Width="24"
+                    Height="24"
+                    Margin="0,2,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center" />
+                    <TextBlock
+                    x:Name="AppTitle"
+                    Margin="12,2,4,0"
+                    VerticalAlignment="Center"
+                    Text="Untitled - Sheets"
+                    FontSize="12"
+                    FontWeight="Normal" Foreground="Green"/>
+                </StackPanel>
+            </Border>
+            <Grid x:Name="InsiderGrid">
+                <Button Background="#FFFFC225" Width="50" Height="25" Padding="0" Click="showinsiderinfo">
+                    <Grid>
+                        <TextBlock Text="DEV" TextAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"></TextBlock>
+                    </Grid>
+                </Button>
+                <ui:TeachingTip x:Name="ToggleThemeTeachingTip1"
+Title="Dev Channel"
+Subtitle="The Dev Channel is the Insider Channel that receives builds with the latest features and may contain features that may not get released to the public. Beware, as these builds may be buggy or crash!">
+                    <ui:TeachingTip.IconSource>
+                        <ui:FontIconSource  Glyph="&#xF1AD;"/>
+                    </ui:TeachingTip.IconSource>
+                </ui:TeachingTip>
+            </Grid>
+            <TextBlock
+                    x:Name="UnsavedTextBlock"
+                    Padding="5,0"
+                    VerticalAlignment="Center"
+                    Text="* Not Saved"
+                    ToolTipService.ToolTip="There are unsaved changes." />
+        </StackPanel>
 
     </Grid>
 </Window>
