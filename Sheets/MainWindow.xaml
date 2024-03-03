@@ -75,6 +75,10 @@ Subtitle="The Dev Channel is the Insider Channel that receives builds with the l
                         <Fluent:BackstageTabControl>
                             <Fluent:BackstageTabItem Header="About">
                                 <StackPanel>
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="8">
+                                        <Image Source="/sheets_icon.ico" Height="128" Width="128"/>
+                                        <TextBlock VerticalAlignment="Center" Text="Sheets" Foreground="Green" FontSize="48" FontWeight="SemiBold"/>
+                                    </StackPanel>
                                     <TextBlock Text="Sheets, v1.0 by ErrorTek/jpbandroid"></TextBlock>
                                     <TextBlock Text="© 2024 ErrorTek/jpbandroid. Licensed under the MIT License."></TextBlock>
                                 </StackPanel>
