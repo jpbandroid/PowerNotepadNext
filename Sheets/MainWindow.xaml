@@ -35,8 +35,8 @@ ui:WindowHelper.UseModernWindowStyle="True">
                     Width="24"
                     Height="24"
                     Margin="0,0,0,0"
-                    HorizontalAlignment="Left"
-                    VerticalAlignment="Center" />
+                    VerticalAlignment="Center"
+                        Source="/sheets_icon.ico"/>
                     <TextBlock
                     x:Name="AppTitle"
                     Margin="12,2,4,0"
@@ -86,8 +86,8 @@ Subtitle="The Dev Channel is the Insider Channel that receives builds with the l
                 <!--Tabs-->
                 <Fluent:RibbonTabItem Header="Home">
                     <Fluent:RibbonGroupBox Header="Manage files">
-                        <Fluent:Button Header="Open" Click="Open"/>
-                        <Fluent:Button Header="Save"  Click="Save"/>
+                        <Fluent:Button Header="Open" Click="Open" LargeIcon="open.png"/>
+                        <Fluent:Button Header="Save"  Click="Save" LargeIcon="save.png"/>
                     </Fluent:RibbonGroupBox>
                 </Fluent:RibbonTabItem>
             </Fluent:Ribbon>
