@@ -86,8 +86,8 @@ Subtitle="The Dev Channel is the Insider Channel that receives builds with the l
                 <!--Tabs-->
                 <Fluent:RibbonTabItem Header="Home">
                     <Fluent:RibbonGroupBox Header="Manage files">
-                        <Fluent:Button Header="Open" />
-                        <Fluent:Button Header="Save"  />
+                        <Fluent:Button Header="Open" Click="Open"/>
+                        <Fluent:Button Header="Save"  Click="Save"/>
                     </Fluent:RibbonGroupBox>
                 </Fluent:RibbonTabItem>
             </Fluent:Ribbon>
@@ -95,6 +95,6 @@ Subtitle="The Dev Channel is the Insider Channel that receives builds with the l
 
 
 
-        <rg:ReoGridControl x:Name="grid"  Grid.Row="2"/>
+        <rg:ReoGridControl x:Name="sheet"  Grid.Row="2"/>
     </Grid>
 </Fluent:RibbonWindow>
