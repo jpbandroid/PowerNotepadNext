@@ -7,6 +7,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>sheets_icon.ico</ApplicationIcon>
+    <Authors>jpb</Authors>
+	  <Company>jpb</Company>
+	  <Copyright>Copyright © 2024 jpb. Licensed under the MIT License.</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
