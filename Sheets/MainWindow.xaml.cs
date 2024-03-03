@@ -39,6 +39,7 @@ namespace Sheets
             {
                 sheet.Load(openFileDialog.FileName, unvell.ReoGrid.IO.FileFormat.Excel2007);
                 UnsavedTextBlock.Visibility = Visibility.Collapsed;
+                AppTitle.Text = openFileDialog.SafeFileName + " - Sheets";
             }
         }
 
@@ -49,6 +50,7 @@ namespace Sheets
             {
                 sheet.Save(saveFileDialog.FileName, unvell.ReoGrid.IO.FileFormat.Excel2007);
                 UnsavedTextBlock.Visibility = Visibility.Collapsed;
+                AppTitle.Text = saveFileDialog.SafeFileName + " - Sheets";
             }
         }
     }
