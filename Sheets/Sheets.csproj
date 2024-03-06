@@ -10,6 +10,8 @@
     <Authors>jpb</Authors>
 	  <Company>jpb</Company>
 	  <Copyright>Copyright © 2024 jpb. Licensed under the MIT License.</Copyright>
+	  <AssemblyVersion>1.1.0.0</AssemblyVersion>
+	  <FileVersion>1.1.0.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
