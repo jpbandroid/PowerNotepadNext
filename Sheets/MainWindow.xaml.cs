@@ -13,6 +13,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using unvell.ReoGrid;
 using unvell.ReoGrid.IO.OpenXML.Schema;
+using AutoUpdaterDotNET;
 
 namespace Sheets
 {
@@ -52,6 +53,11 @@ namespace Sheets
                 UnsavedTextBlock.Visibility = Visibility.Collapsed;
                 AppTitle.Text = saveFileDialog.SafeFileName + " - Sheets";
             }
+        }
+
+        private void update(object sender, RoutedEventArgs e)
+        {
+            AutoUpdater.Start("https://raw.githubusercontent.com/jpbandroid/jpbOffice-Resources/main/Sheets/updateinfo.xml");
         }
     }
 }

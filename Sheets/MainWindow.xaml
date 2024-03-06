@@ -676,6 +676,13 @@ That's all there is to it!"/>
                                     </StackPanel>
                                 </ScrollViewer>
                             </Fluent:BackstageTabItem>
+                            <Fluent:BackstageTabItem VerticalAlignment="Bottom" Header="Account">
+                                <StackPanel>
+                                    <Rectangle Height="48"/>
+                                    <TextBlock FontWeight="SemiBold">Update Options</TextBlock>
+                                    <Fluent:Button Header="Check for Updates" Click="update"/>
+                                </StackPanel>
+                            </Fluent:BackstageTabItem>
                         </Fluent:BackstageTabControl>
                     </Fluent:Backstage>
                 </Fluent:Ribbon.Menu>
