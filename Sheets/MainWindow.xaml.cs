@@ -26,6 +26,9 @@ namespace Sheets
         public MainWindow()
         {
             InitializeComponent();
+            string extendedUserName = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
+            string userName = Environment.UserName;
+            user.Text = userName;
         }
 
         private void showinsiderinfo(object sender, RoutedEventArgs e)

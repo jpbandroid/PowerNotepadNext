@@ -693,10 +693,20 @@ That's all there is to it!"/>
                                 </ScrollViewer>
                             </Fluent:BackstageTabItem>
                             <Fluent:BackstageTabItem VerticalAlignment="Bottom" Header="Account">
-                                <StackPanel>
-                                    <Rectangle Height="48"/>
-                                    <TextBlock FontWeight="SemiBold">Update Options</TextBlock>
-                                    <Fluent:Button Header="Check for Updates" Click="update" Icon="sync.png"/>
+                                <StackPanel Orientation="Horizontal" Margin="16">
+                                    <StackPanel>
+                                        <Rectangle Height="48"/>
+                                        <TextBlock FontWeight="SemiBold">Account</TextBlock>
+                                        <StackPanel Orientation="Horizontal">
+                                            <ui:PersonPicture x:Name="userpicture"/>
+                                            <TextBlock FontSize="24" Margin="16" FontWeight="Thin" x:Name="user" VerticalAlignment="Center"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                    <StackPanel>
+                                        <Rectangle Height="48"/>
+                                        <TextBlock FontWeight="SemiBold">Update Options</TextBlock>
+                                        <Fluent:Button Header="Check for Updates" Click="update" Icon="sync.png"/>
+                                    </StackPanel>
                                 </StackPanel>
                             </Fluent:BackstageTabItem>
                         </Fluent:BackstageTabControl>
