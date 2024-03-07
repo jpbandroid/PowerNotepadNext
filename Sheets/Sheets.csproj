@@ -15,8 +15,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="add.png" />
     <None Remove="open.png" />
     <None Remove="save.png" />
+    <None Remove="sync.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -34,10 +36,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="add.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="open.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="save.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="sync.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

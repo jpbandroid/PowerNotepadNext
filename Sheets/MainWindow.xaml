@@ -80,7 +80,7 @@ Subtitle="The Dev Channel is the Insider Channel that receives builds with the l
                                 <StackPanel>
                                     <TextBlock Padding="16" Text="Welcome!" FontWeight="SemiBold" FontSize="36"/>
                                     <TextBlock Padding="16" Text="Create" FontWeight="SemiBold" FontSize="16"/>
-                                    <Fluent:Button Header="New spreadsheet"/>
+                                    <Fluent:Button Header="New spreadsheet" Icon="add.png"/>
                                 </StackPanel>
                             </Fluent:StartScreenTabControl.RightContent>
                         </Fluent:StartScreenTabControl>
@@ -696,7 +696,7 @@ That's all there is to it!"/>
                                 <StackPanel>
                                     <Rectangle Height="48"/>
                                     <TextBlock FontWeight="SemiBold">Update Options</TextBlock>
-                                    <Fluent:Button Header="Check for Updates" Click="update"/>
+                                    <Fluent:Button Header="Check for Updates" Click="update" Icon="sync.png"/>
                                 </StackPanel>
                             </Fluent:BackstageTabItem>
                         </Fluent:BackstageTabControl>
