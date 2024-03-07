@@ -70,6 +70,22 @@ Subtitle="The Dev Channel is the Insider Channel that receives builds with the l
         <StackPanel Grid.Row="1">
             <Fluent:Ribbon>
                 <!--Backstage-->
+                <Fluent:Ribbon.StartScreen>
+                    <Fluent:StartScreen Header="Sheets" IsOpen="True">
+                        <Fluent:StartScreenTabControl>
+                            <Fluent:StartScreenTabControl.LeftContent>
+                                <TextBlock Padding="16" Text="Sheets" Foreground="White" FontWeight="SemiBold" FontSize="36"/>
+                            </Fluent:StartScreenTabControl.LeftContent>
+                            <Fluent:StartScreenTabControl.RightContent>
+                                <StackPanel>
+                                    <TextBlock Padding="16" Text="Welcome!" FontWeight="SemiBold" FontSize="36"/>
+                                    <TextBlock Padding="16" Text="Create" FontWeight="SemiBold" FontSize="16"/>
+                                    <Fluent:Button Header="New spreadsheet"/>
+                                </StackPanel>
+                            </Fluent:StartScreenTabControl.RightContent>
+                        </Fluent:StartScreenTabControl>
+                    </Fluent:StartScreen>
+                </Fluent:Ribbon.StartScreen>
                 <Fluent:Ribbon.Menu>
                     <Fluent:Backstage>
                         <Fluent:BackstageTabControl>
