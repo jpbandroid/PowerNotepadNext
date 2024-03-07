@@ -22,6 +22,7 @@ namespace Sheets
     /// </summary>
     public partial class MainWindow : RibbonWindow
     {
+        bool isDebug;
 
         public MainWindow()
         {
@@ -29,6 +30,7 @@ namespace Sheets
             string extendedUserName = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
             string userName = Environment.UserName;
             user.Text = userName;
+            isDebug = false;
         }
 
         private void showinsiderinfo(object sender, RoutedEventArgs e)
@@ -59,8 +61,14 @@ namespace Sheets
         }
 
         private void update(object sender, RoutedEventArgs e)
-        {
-            AutoUpdater.Start("https://raw.githubusercontent.com/jpbandroid/jpbOffice-Resources/main/Sheets/updateinfo.xml");
+        { 
+            if (isDebug == true)
+            {
+                AutoUpdater.Start("https://raw.githubusercontent.com/jpbandroid/jpbOffice-Resources/main/Sheets/updateinfo_debug.xml");
+
+            } else {
+                AutoUpdater.Start("https://raw.githubusercontent.com/jpbandroid/jpbOffice-Resources/main/Sheets/updateinfo.xml");
+            }
         }
     }
 }
