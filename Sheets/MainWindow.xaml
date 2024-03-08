@@ -720,6 +720,11 @@ That's all there is to it!"/>
                         <Fluent:Button Header="Save"  Click="Save" LargeIcon="save.png"/>
                     </Fluent:RibbonGroupBox>
                 </Fluent:RibbonTabItem>
+                <Fluent:RibbonTabItem Header="Help">
+                    <Fluent:RibbonGroupBox Header="About">
+                        <Fluent:Button Header="About" Click="About" LargeIcon="info.png"/>
+                    </Fluent:RibbonGroupBox>
+                </Fluent:RibbonTabItem>
             </Fluent:Ribbon>
         </StackPanel>
 

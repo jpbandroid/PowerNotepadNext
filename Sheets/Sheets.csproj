@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <None Remove="add.png" />
+    <None Remove="info.png" />
     <None Remove="open.png" />
     <None Remove="save.png" />
     <None Remove="SplashScreen1.png" />
@@ -38,6 +39,9 @@
 
   <ItemGroup>
     <Resource Include="add.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="info.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="open.png">

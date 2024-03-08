@@ -70,5 +70,12 @@ namespace Sheets
                 AutoUpdater.Start("https://raw.githubusercontent.com/jpbandroid/jpbOffice-Resources/main/Sheets/updateinfo.xml");
             }
         }
+
+        private void About(object sender, RoutedEventArgs e)
+        {
+            AboutWindow about = new AboutWindow();
+            about.Show();
+            about.Activate();
+        }
     }
 }
