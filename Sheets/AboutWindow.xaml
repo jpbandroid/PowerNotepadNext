@@ -10,8 +10,7 @@
                 ui:ThemeManager.IsThemeAware="True"  
 ui:WindowHelper.SystemBackdropType="Tabbed"
 ui:TitleBar.IsBackButtonVisible="False"
-ui:WindowHelper.UseModernWindowStyle="True"
-        ShowInTaskbar="False">
+ui:WindowHelper.UseModernWindowStyle="True">
     <Grid>
         <StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="8">
