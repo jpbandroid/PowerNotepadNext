@@ -30,7 +30,7 @@ namespace Sheets
             string extendedUserName = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
             string userName = Environment.UserName;
             user.Text = userName;
-            isDebug = true;
+            isDebug = false;
         }
 
         private void showinsiderinfo(object sender, RoutedEventArgs e)
