@@ -18,6 +18,7 @@
     <None Remove="add.png" />
     <None Remove="open.png" />
     <None Remove="save.png" />
+    <None Remove="SplashScreen1.png" />
     <None Remove="sync.png" />
   </ItemGroup>
 
@@ -48,6 +49,10 @@
     <Resource Include="sync.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <SplashScreen Include="SplashScreen1.png" />
   </ItemGroup>
 
 </Project>
