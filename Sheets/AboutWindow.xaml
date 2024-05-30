@@ -17,8 +17,8 @@ ui:WindowHelper.UseModernWindowStyle="True">
                 <Image Source="/sheets_icon.ico" Height="64" Width="64"/>
                 <TextBlock VerticalAlignment="Center" Text="Sheets" Foreground="Green" FontSize="36" FontWeight="SemiBold"/>
             </StackPanel>
-            <TextBlock Text="Sheets, version 2404 (16.0.14430.20270)" HorizontalAlignment="Center" FontWeight="SemiBold" FontSize="16"></TextBlock>
-            <TextBlock Text="jpb Office, version 2404 (16.0.14430.20270)" HorizontalAlignment="Center" FontWeight="SemiBold" FontSize="16"></TextBlock>
+            <TextBlock Text="Sheets, version 2405 (16.0.14527.20226)" HorizontalAlignment="Center" FontWeight="SemiBold" FontSize="16"></TextBlock>
+            <TextBlock Text="jpb Office, version 2405 (16.0.14527.20226)" HorizontalAlignment="Center" FontWeight="SemiBold" FontSize="16"></TextBlock>
             <TextBlock Text="© 2024 ErrorTek/jpbandroid. Licensed under the MIT License." HorizontalAlignment="Center"></TextBlock>
             <TextBlock Text="Useful links" HorizontalAlignment="Center" FontSize="24" FontWeight="SemiBold"/>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
