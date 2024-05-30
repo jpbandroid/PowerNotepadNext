@@ -12,6 +12,7 @@
 	  <Copyright>Copyright © 2024 jpb. Licensed under the MIT License.</Copyright>
 	  <AssemblyVersion>16.0.14527.20226</AssemblyVersion>
 	  <FileVersion>16.0.14527.20226</FileVersion>
+	  <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 
   <ItemGroup>
