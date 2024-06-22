@@ -46,7 +46,7 @@ ui:WindowHelper.UseModernWindowStyle="True">
                     FontWeight="Normal" Foreground="Green"/>
                 </StackPanel>
             </Border>
-            <Grid x:Name="InsiderGrid">
+            <Grid x:Name="InsiderGrid" Visibility="Collapsed">
                 <Button Background="#FFFFC225" Width="50" Height="25" Padding="0" Click="showinsiderinfo">
                     <Grid>
                         <TextBlock Text="DEV" TextAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"></TextBlock>
@@ -71,10 +71,10 @@ Subtitle="The Dev Channel is the Insider Channel that receives builds with the l
             <Fluent:Ribbon>
                 <!--Backstage-->
                 <Fluent:Ribbon.StartScreen>
-                    <Fluent:StartScreen Header="Sheets" IsOpen="True">
+                    <Fluent:StartScreen IsOpen="True">
                         <Fluent:StartScreenTabControl>
                             <Fluent:StartScreenTabControl.LeftContent>
-                                <TextBlock Padding="16" Text="Sheets" Foreground="White" FontWeight="SemiBold" FontSize="36"/>
+                                <TextBlock Padding="16" Text="Sheets" Foreground="#008A00" FontWeight="SemiBold" FontSize="36"/>
                             </Fluent:StartScreenTabControl.LeftContent>
                             <Fluent:StartScreenTabControl.RightContent>
                                 <StackPanel>
@@ -91,7 +91,7 @@ Subtitle="The Dev Channel is the Insider Channel that receives builds with the l
                         <Fluent:BackstageTabControl>
                             <Fluent:BackstageTabItem Header="About">
                                 <StackPanel>
-                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="8">
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="32">
                                         <Image Source="/sheets_icon.ico" Height="64" Width="64"/>
                                         <TextBlock VerticalAlignment="Center" Text="Sheets" Foreground="Green" FontSize="36" FontWeight="SemiBold"/>
                                     </StackPanel>
@@ -100,11 +100,11 @@ Subtitle="The Dev Channel is the Insider Channel that receives builds with the l
                                 </StackPanel>
                             </Fluent:BackstageTabItem>
                             <Fluent:BackstageTabItem Header="Open Source Licenses">
-                                <ScrollViewer>
+                                <ScrollViewer Margin="32">
                                     <StackPanel>
-                                    <TextBlock FontWeight="SemiBold" Text="Sheets" FontSize="24"/>
-                                    <TextBlock Text="Licensed under the MIT License."/>
-                                    <TextBlock TextWrapping="Wrap" Text="MIT License
+                                        <TextBlock FontWeight="SemiBold" Text="Sheets" FontSize="24"/>
+                                        <TextBlock Text="Licensed under the MIT License."/>
+                                        <TextBlock TextWrapping="Wrap" Text="MIT License
 &#x0a;
                             &#x0a;
 Copyright (c) 2024 jpb (GitHub username jpbandroid)
@@ -131,8 +131,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE."/>
                                         <TextBlock FontSize="24" FontWeight="SemiBold" Text="Libraries used in Sheets"/>
                                         <TextBlock FontWeight="SemiBold" Text="Fluent.Ribbon"/>
-                                    <TextBlock Text="Licensed under the MIT License."/>
-                                    <TextBlock TextWrapping="Wrap" Text="The MIT License (MIT)
+                                        <TextBlock Text="Licensed under the MIT License."/>
+                                        <TextBlock TextWrapping="Wrap" Text="The MIT License (MIT)
 
 https://github.com/fluentribbon/Fluent.Ribbon
 Copyright (c) 2012-2023 Bastian Schmidt
@@ -155,8 +155,8 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE."/>
-                                    <TextBlock FontWeight="SemiBold" Text="ReoGrid"/>
-                                    <TextBlock Text="Licensed under the MIT License."/>
+                                        <TextBlock FontWeight="SemiBold" Text="ReoGrid"/>
+                                        <TextBlock Text="Licensed under the MIT License."/>
                                         <TextBlock TextWrapping="Wrap" Text="MIT License &#x0a;
 
 
@@ -184,7 +184,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE."/>
                                         <TextBlock FontWeight="SemiBold" Text="iNKORE.UI.WPF.Modern"/>
-                                    <TextBlock Text="Licensed under the LGPL 2.1-or-later License."/>
+                                        <TextBlock Text="Licensed under the LGPL 2.1-or-later License."/>
                                         <TextBlock TextWrapping="Wrap" Text="                  GNU LESSER GENERAL PUBLIC LICENSE &#x0a;
                        Version 2.1, February 1999
 &#x0a;
@@ -693,7 +693,7 @@ That's all there is to it!"/>
                                 </ScrollViewer>
                             </Fluent:BackstageTabItem>
                             <Fluent:BackstageTabItem VerticalAlignment="Bottom" Header="Account">
-                                <StackPanel Orientation="Horizontal" Margin="16">
+                                <StackPanel Orientation="Horizontal" Margin="32">
                                     <StackPanel>
                                         <Rectangle Height="48"/>
                                         <TextBlock FontWeight="SemiBold">Account</TextBlock>
