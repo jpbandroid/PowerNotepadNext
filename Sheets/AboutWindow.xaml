@@ -6,7 +6,7 @@
         xmlns:ui="http://schemas.inkore.net/lib/ui/wpf/modern"
         xmlns:local="clr-namespace:Sheets"
         mc:Ignorable="d"
-        Title="About Sheets" Height="450" Width="800"
+        Title="About PowerNotepad" Height="450" Width="800"
                 ui:ThemeManager.IsThemeAware="True"  
 ui:WindowHelper.SystemBackdropType="Tabbed"
 ui:TitleBar.IsBackButtonVisible="False"
@@ -14,16 +14,16 @@ ui:WindowHelper.UseModernWindowStyle="True">
     <Grid>
         <StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="8">
-                <Image Source="/sheets_icon.ico" Height="64" Width="64"/>
-                <TextBlock VerticalAlignment="Center" Text="Sheets" Foreground="Green" FontSize="36" FontWeight="SemiBold"/>
+                <Image Source="/powernotepad_icon.ico" Height="64" Width="64"/>
+                <TextBlock VerticalAlignment="Center" Text="PowerNotepad" Foreground="#76608A" FontSize="36" FontWeight="SemiBold"/>
             </StackPanel>
-            <TextBlock Text="Sheets, version 2406 (16.0.14701.20262)" HorizontalAlignment="Center" FontWeight="SemiBold" FontSize="16"></TextBlock>
+            <TextBlock Text="PowerNotepad, version 2406 (16.0.14701.20262)" HorizontalAlignment="Center" FontWeight="SemiBold" FontSize="16"></TextBlock>
             <TextBlock Text="jpb Office, version 2406 (16.0.14701.20262)" HorizontalAlignment="Center" FontWeight="SemiBold" FontSize="16"></TextBlock>
             <TextBlock Text="© 2024 ErrorTek/jpbandroid. Licensed under the MIT License." HorizontalAlignment="Center"></TextBlock>
             <TextBlock Text="Useful links" HorizontalAlignment="Center" FontSize="24" FontWeight="SemiBold"/>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <Button Style="{StaticResource AccentButtonStyle}" Content="ET's YouTube channel" Click="Button_Click"/>
-                <ui:HyperlinkButton Content="Sheets' GitHub repo" NavigateUri="https://github.com/jpbandroid/SheetsPlus"/>
+                <ui:HyperlinkButton Content="PowerNotepad' GitHub repo" NavigateUri="https://github.com/jpbandroid/SheetsPlus"/>
             </StackPanel>
         </StackPanel>
     </Grid>

@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
-    <ApplicationIcon>sheets_icon.ico</ApplicationIcon>
+    <ApplicationIcon>powernotepad_icon.ico</ApplicationIcon>
     <Authors>jpb</Authors>
 	  <Company>jpb</Company>
 	  <Copyright>Copyright © 2024 jpb. Licensed under the MIT License.</Copyright>
@@ -15,25 +15,30 @@
 	  <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="add.png" />
-    <None Remove="info.png" />
-    <None Remove="open.png" />
-    <None Remove="save.png" />
-    <None Remove="SplashScreen1.png" />
-    <None Remove="sync.png" />
-  </ItemGroup>
+	<ItemGroup>
+		<None Remove="add.png" />
+		<None Remove="info.png" />
+		<None Remove="Monaco\index.html" />
+		<None Remove="open.png" />
+		<None Remove="save.png" />
+		<None Remove="SplashScreen1.png" />
+		<None Remove="sync.png" />
+	</ItemGroup>
 
   <ItemGroup>
-    <Content Include="sheets_icon.ico">
+    <Content Include="powernotepad_icon.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+	  <Content Include="Monaco**">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Autoupdater.NET.Official" Version="1.9.1" />
     <PackageReference Include="Fluent.Ribbon" Version="11.0.0-alpha0235" />
     <PackageReference Include="iNKORE.UI.WPF.Modern" Version="0.9.29" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2646-prerelease" />
     <PackageReference Include="System.Drawing.Common" Version="9.0.0-preview.5.24306.5" />
     <PackageReference Include="unvell.ReoGridWPF.dll" Version="3.0.0" />
   </ItemGroup>

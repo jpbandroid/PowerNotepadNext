@@ -6,9 +6,9 @@
    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
    xmlns:ui="http://schemas.inkore.net/lib/ui/wpf/modern"
    xmlns:local="clr-namespace:Sheets"
-   mc:Ignorable="d"
-                       xmlns:rg="clr-namespace:unvell.ReoGrid;assembly=unvell.ReoGrid"
-   Title="Sheets" Height="450" Width="800"
+   mc:Ignorable="d" Loaded="RibbonWindow_Loaded"
+                       xmlns:rg="clr-namespace:unvell.ReoGrid;assembly=unvell.ReoGrid" xmlns:wpf="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+                     Title="PowerNotepad" Height="450" Width="800"
         ui:ThemeManager.IsThemeAware="True"
 ui:TitleBar.ExtendViewIntoTitleBar="True"    
 ui:WindowHelper.SystemBackdropType="Tabbed"
@@ -36,14 +36,14 @@ ui:WindowHelper.UseModernWindowStyle="True">
                     Height="24"
                     Margin="0,0,0,0"
                     VerticalAlignment="Center"
-                        Source="/sheets_icon.ico"/>
+                        Source="/powernotepad_icon.ico"/>
                     <TextBlock
                     x:Name="AppTitle"
                     Margin="12,2,4,0"
                     VerticalAlignment="Center"
-                    Text="Untitled - Sheets"
+                    Text="Untitled - PowerNotepad"
                     FontSize="12"
-                    FontWeight="Normal" Foreground="Green"/>
+                    FontWeight="Normal" Foreground="#76608A"/>
                 </StackPanel>
             </Border>
             <Grid x:Name="InsiderGrid" Visibility="Collapsed">
@@ -74,7 +74,7 @@ Subtitle="The Dev Channel is the Insider Channel that receives builds with the l
                     <Fluent:StartScreen IsOpen="True">
                         <Fluent:StartScreenTabControl>
                             <Fluent:StartScreenTabControl.LeftContent>
-                                <TextBlock Padding="16" Text="Sheets" Foreground="#008A00" FontWeight="SemiBold" FontSize="36"/>
+                                <TextBlock Padding="16" Text="PowerNotepad" Foreground="#008A00" FontWeight="SemiBold" FontSize="36"/>
                             </Fluent:StartScreenTabControl.LeftContent>
                             <Fluent:StartScreenTabControl.RightContent>
                                 <StackPanel>
@@ -92,17 +92,17 @@ Subtitle="The Dev Channel is the Insider Channel that receives builds with the l
                             <Fluent:BackstageTabItem Header="About">
                                 <StackPanel>
                                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="32">
-                                        <Image Source="/sheets_icon.ico" Height="64" Width="64"/>
-                                        <TextBlock VerticalAlignment="Center" Text="Sheets" Foreground="Green" FontSize="36" FontWeight="SemiBold"/>
+                                        <Image Source="/powernotepad_icon.ico" Height="64" Width="64"/>
+                                        <TextBlock VerticalAlignment="Center" Text="PowerNotepad" Foreground="#76608A" FontSize="36" FontWeight="SemiBold"/>
                                     </StackPanel>
-                                    <TextBlock Text="Sheets, version 2406 (16.0.14701.20262)"></TextBlock>
+                                    <TextBlock Text="PowerNotepad, version 2406 (16.0.14701.20262)"></TextBlock>
                                     <TextBlock Text="© 2024 ErrorTek/jpbandroid. Licensed under the MIT License."></TextBlock>
                                 </StackPanel>
                             </Fluent:BackstageTabItem>
                             <Fluent:BackstageTabItem Header="Open Source Licenses">
                                 <ScrollViewer Margin="32">
                                     <StackPanel>
-                                        <TextBlock FontWeight="SemiBold" Text="Sheets" FontSize="24"/>
+                                        <TextBlock FontWeight="SemiBold" Text="PowerNotepad" FontSize="24"/>
                                         <TextBlock Text="Licensed under the MIT License."/>
                                         <TextBlock TextWrapping="Wrap" Text="MIT License
 &#x0a;
@@ -129,7 +129,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE."/>
-                                        <TextBlock FontSize="24" FontWeight="SemiBold" Text="Libraries used in Sheets"/>
+                                        <TextBlock FontSize="24" FontWeight="SemiBold" Text="Libraries used in PowerNotepad"/>
                                         <TextBlock FontWeight="SemiBold" Text="Fluent.Ribbon"/>
                                         <TextBlock Text="Licensed under the MIT License."/>
                                         <TextBlock TextWrapping="Wrap" Text="The MIT License (MIT)
@@ -727,9 +727,6 @@ That's all there is to it!"/>
                 </Fluent:RibbonTabItem>
             </Fluent:Ribbon>
         </StackPanel>
-
-
-
-        <rg:ReoGridControl x:Name="sheet"  Grid.Row="2"/>
+        <wpf:WebView2 Grid.Row="2" x:Name="monaco"/>
     </Grid>
 </Fluent:RibbonWindow>

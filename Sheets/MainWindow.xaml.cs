@@ -43,9 +43,8 @@ namespace Sheets
             OpenFileDialog openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() == true)
             {
-                sheet.Load(openFileDialog.FileName, unvell.ReoGrid.IO.FileFormat.Excel2007);
                 UnsavedTextBlock.Visibility = Visibility.Collapsed;
-                AppTitle.Text = openFileDialog.SafeFileName + " - Sheets";
+                AppTitle.Text = openFileDialog.SafeFileName + " - PowerNotepad";
             }
         }
 
@@ -54,9 +53,8 @@ namespace Sheets
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             if (saveFileDialog.ShowDialog() == true)
             {
-                sheet.Save(saveFileDialog.FileName, unvell.ReoGrid.IO.FileFormat.Excel2007);
                 UnsavedTextBlock.Visibility = Visibility.Collapsed;
-                AppTitle.Text = saveFileDialog.SafeFileName + " - Sheets";
+                AppTitle.Text = saveFileDialog.SafeFileName + " - PowerNotepad";
             }
         }
 
@@ -76,6 +74,14 @@ namespace Sheets
             AboutWindow about = new AboutWindow();
             about.Show();
             about.Activate();
+        }
+
+        private void RibbonWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            this.monaco.Source =
+new Uri(System.IO.Path.Combine(
+System.AppDomain.CurrentDomain.BaseDirectory,
+@"Monaco\index.html"));
         }
     }
 }
