@@ -95,7 +95,7 @@ Subtitle="The Dev Channel is the Insider Channel that receives builds with the l
                                         <Image Source="/sheets_icon.ico" Height="64" Width="64"/>
                                         <TextBlock VerticalAlignment="Center" Text="Sheets" Foreground="Green" FontSize="36" FontWeight="SemiBold"/>
                                     </StackPanel>
-                                    <TextBlock Text="Sheets, version 2405 (16.0.14527.20226)"></TextBlock>
+                                    <TextBlock Text="Sheets, version 2406 (16.0.14701.20262)"></TextBlock>
                                     <TextBlock Text="© 2024 ErrorTek/jpbandroid. Licensed under the MIT License."></TextBlock>
                                 </StackPanel>
                             </Fluent:BackstageTabItem>
