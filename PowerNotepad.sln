@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sheets", "Sheets\Sheets.csproj", "{B3EF2C7F-DC37-412A-B00B-34B228BA9268}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerNotepad", "Sheets\PowerNotepad.csproj", "{B3EF2C7F-DC37-412A-B00B-34B228BA9268}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

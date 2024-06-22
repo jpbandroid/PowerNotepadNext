@@ -74,13 +74,13 @@ Subtitle="The Dev Channel is the Insider Channel that receives builds with the l
                     <Fluent:StartScreen IsOpen="True">
                         <Fluent:StartScreenTabControl>
                             <Fluent:StartScreenTabControl.LeftContent>
-                                <TextBlock Padding="16" Text="PowerNotepad" Foreground="#008A00" FontWeight="SemiBold" FontSize="36"/>
+                                <TextBlock Padding="16" Text="PowerNotepad" Foreground="#76608A" FontWeight="SemiBold" FontSize="36"/>
                             </Fluent:StartScreenTabControl.LeftContent>
                             <Fluent:StartScreenTabControl.RightContent>
                                 <StackPanel>
                                     <TextBlock Padding="16" Text="Welcome!" FontWeight="SemiBold" FontSize="36"/>
                                     <TextBlock Padding="16" Text="Create" FontWeight="SemiBold" FontSize="16"/>
-                                    <Fluent:Button Header="New spreadsheet" Icon="add.png"/>
+                                    <Fluent:Button Header="New file" Icon="add.png"/>
                                 </StackPanel>
                             </Fluent:StartScreenTabControl.RightContent>
                         </Fluent:StartScreenTabControl>
