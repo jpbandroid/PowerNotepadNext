@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using unvell.ReoGrid;
 using unvell.ReoGrid.IO.OpenXML.Schema;
 using AutoUpdaterDotNET;
+using System.Text.RegularExpressions;
 
 namespace Sheets
 {
@@ -38,21 +39,28 @@ namespace Sheets
             ToggleThemeTeachingTip1.IsOpen = true;
         }
 
-        private void Open(object sender, RoutedEventArgs e)
+        private async void Open(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() == true)
             {
+                var value = File.ReadAllText(openFileDialog.FileName);
+                value = Regex.Escape(value);
+                await monaco.ExecuteScriptAsync($"editor.setValue('{value}');");
                 UnsavedTextBlock.Visibility = Visibility.Collapsed;
                 AppTitle.Text = openFileDialog.SafeFileName + " - PowerNotepad";
             }
         }
 
-        private void Save(object sender, RoutedEventArgs e)
+        private async void Save(object sender, RoutedEventArgs e)
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             if (saveFileDialog.ShowDialog() == true)
             {
+                var value = await monaco.ExecuteScriptAsync("editor.getValue();");
+                value = Regex.Unescape(value);
+                value = value.Substring(1, value.Length - 2);
+                File.WriteAllText(saveFileDialog.FileName, value);
                 UnsavedTextBlock.Visibility = Visibility.Collapsed;
                 AppTitle.Text = saveFileDialog.SafeFileName + " - PowerNotepad";
             }

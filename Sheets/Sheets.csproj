@@ -18,7 +18,6 @@
 	<ItemGroup>
 		<None Remove="add.png" />
 		<None Remove="info.png" />
-		<None Remove="Monaco\index.html" />
 		<None Remove="open.png" />
 		<None Remove="save.png" />
 		<None Remove="SplashScreen1.png" />
@@ -29,9 +28,6 @@
     <Content Include="powernotepad_icon.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-	  <Content Include="Monaco**">
-		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </Content>
   </ItemGroup>
 
   <ItemGroup>
