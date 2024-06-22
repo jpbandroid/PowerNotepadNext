@@ -44,7 +44,16 @@ namespace Sheets
             OpenFileDialog openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() == true)
             {
+                FileInfo fileInfo = new FileInfo(openFileDialog.FileName);
                 var value = File.ReadAllText(openFileDialog.FileName);
+                var fileExt = fileInfo.Extension;
+                if (fileExt == ".js")
+                {
+                    await monaco.ExecuteScriptAsync("editor.updateOptions({language: 'javascript'})");
+                } else if (fileExt == ".py")
+                {
+                    await monaco.ExecuteScriptAsync("editor.updaeOptions({language: 'python'})");
+                }
                 value = Regex.Escape(value);
                 await monaco.ExecuteScriptAsync($"editor.setValue('{value}');");
                 UnsavedTextBlock.Visibility = Visibility.Collapsed;

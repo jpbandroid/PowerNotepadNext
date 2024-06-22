@@ -727,6 +727,9 @@ That's all there is to it!"/>
                 </Fluent:RibbonTabItem>
             </Fluent:Ribbon>
         </StackPanel>
-        <wpf:WebView2 Grid.Row="2" x:Name="monaco"/>
+        <Grid Grid.Row="2" Background="Transparent">
+            <wpf:WebView2 Grid.Row="2" x:Name="monaco" DefaultBackgroundColor="Transparent"/>
+
+        </Grid>
     </Grid>
 </Fluent:RibbonWindow>
