@@ -23,7 +23,7 @@ ui:WindowHelper.UseModernWindowStyle="True">
             <TextBlock Text="Useful links" HorizontalAlignment="Center" FontSize="24" FontWeight="SemiBold"/>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <Button Style="{StaticResource AccentButtonStyle}" Content="ET's YouTube channel" Click="Button_Click"/>
-                <ui:HyperlinkButton Content="PowerNotepad' GitHub repo" NavigateUri="https://github.com/jpbandroid/SheetsPlus"/>
+                <ui:HyperlinkButton Content="PowerNotepad's GitHub repo" NavigateUri="https://github.com/jpbandroid/PowerNotepadNext"/>
             </StackPanel>
         </StackPanel>
     </Grid>

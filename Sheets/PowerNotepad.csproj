@@ -15,19 +15,23 @@
 	  <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 
-	<ItemGroup>
-		<None Remove="add.png" />
-		<None Remove="info.png" />
-		<None Remove="open.png" />
-		<None Remove="save.png" />
-		<None Remove="SplashScreen1.png" />
-		<None Remove="sync.png" />
-	</ItemGroup>
+  <ItemGroup>
+    <None Remove="add.png" />
+    <None Remove="info.png" />
+    <None Remove="open.png" />
+    <None Remove="save.png" />
+    <None Remove="sync.png" />
+  </ItemGroup>
+
+
 
   <ItemGroup>
     <Content Include="powernotepad_icon.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="save.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>
@@ -49,16 +53,16 @@
     <Resource Include="open.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="save.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
     <Resource Include="sync.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
 
+
   <ItemGroup>
-    <SplashScreen Include="SplashScreen1.png" />
+    <SplashScreen Include="SplashScreen1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </SplashScreen>
   </ItemGroup>
 
 </Project>
