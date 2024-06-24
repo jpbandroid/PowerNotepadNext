@@ -97,7 +97,7 @@ namespace Sheets
         {
             this.monaco.Source =
 new Uri(System.IO.Path.Combine(
-System.AppDomain.CurrentDomain.BaseDirectory,
+System.IO.Path.GetDirectoryName(Environment.ProcessPath),
 @"Monaco\index.html"));
         }
     }
